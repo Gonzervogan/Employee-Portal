@@ -1,0 +1,476 @@
+@font-face {
+    font-family: Another_Flight;
+    src: url('static/fonts/Another_Flight.otf');
+}
+
+@font-face {
+    font-family: Adam_CG;
+    src: url('static/fonts/Adam_CG.otf');
+}
+
+@font-face {
+    font-family: Nexa_Bold;
+    src: url('static/fonts/Nexa_Bold.otf');
+}
+
+@font-face {
+    font-family: Nexa_Light;
+    src: url('static/fonts/Nexa_Light.otf');
+}
+
+@font-face {
+    font-family: Carre;
+    src: url('static/fonts/Carre.otf');
+}
+
+html,body {
+    height: 100%;
+    margin: 0px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/*---------------Navigation Bar-----------------*/
+
+.NavBar {
+    background: #000000;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 10;
+    position: fixed;
+}
+
+.nav_region {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.nav_bar_left {
+    float: left;
+}
+
+.nav_bar_right {
+    float: right;
+}
+
+.nav_bar_element {
+    display: flex;
+    padding: 0px 20px;
+    vertical-align: middle;
+    height: 40px;
+    align-items: center;
+}
+
+.NavBar a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    height: 40px;
+    background: #FFC107;
+}
+
+.NavBar a:hover {
+    background-color: #f91d1d;
+    color: black;
+}
+
+.NavBar a:active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.NavBar button {
+    border-radius: 30px;
+    outline: none;
+    border: solid 2px black;
+    background: #FFC107;
+    color: black;
+    font-family: inherit;
+    font-size: 1em;
+    transition: all 0.4s;
+}
+
+.NavBar button:hover {
+    background: #f91d1d;
+}
+
+/*---------------Login Page---------------------*/
+
+.Login-View {
+    background-image: url("static/images/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Login-Box {
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #f0f8ff2e;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Another_Flight;
+    font-size: 35px;
+    color: #585858
+}
+
+.Login-Box h2 {
+    margin-bottom: 20px;
+}
+
+.Error-Message-Container {
+    height: 20px;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.Login-Box-Field {
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.Login-Box-Input {
+    padding-left: 50px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 22px 8px;
+    background-size: 20px;
+    transition: all 0.4s;
+    color: #5b5d5f
+}
+
+.Login-Box-Input:focus {
+    background-position: 12px 8px;
+    /*border: 3px solid #555;*/
+}
+
+.Login-Box-Text {
+    background-image: url("static/images/user.png");
+}
+
+.Login-Box-Password {
+    background-image: url("static/images/lock.png");
+}
+
+.Login-Box-Button {
+    background-color: black;
+    color: white;
+}
+
+.Login-Box-Button:hover {
+    background-color: #00d3ff;
+    color: black;
+}
+
+/*---------------Profile------------------*/
+
+.Profile-Container{
+    padding-top: 90px;
+}
+
+.Profile-View {
+    width: auto;
+    height: 200px;
+    margin: auto;
+    box-shadow: 5px 10px 18px #484848;
+    display: table;
+    background: #FF9800;
+    transition: all 0.4s;
+}
+
+.Profile-View:hover {
+    box-shadow: 5px 10px 18px #E91E63;
+    background: black;
+    color: #E91E63;
+}
+
+.outer_table {
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    margin-top: 40px;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+.Profile-View img {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.details {
+    width: auto;
+    height: 160px;
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+    padding: 20px;
+}
+
+.details img {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+    padding-top: 15px;
+    float: none;
+}
+
+.details_name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.details_job {
+    font-size: 20px;
+}
+
+.details_company {
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+}
+
+.Profile-View:hover .details_company {
+    color: white;
+}
+
+/*---------------Company Details------------*/
+
+:root{
+    --details-box-background: #F5F4EB;
+    --details-box-tile-border:1px solid transparent;
+    --company-name-transform:rotateX(-180deg);
+    --company-address-transform:rotateY(180deg);
+    --company-page-views-transform:rotateX(-180deg);
+}
+
+.Details-View {height: 100%;padding-top: 90px;box-sizing: border-box;background: #545454;}
+
+.Details-Box {
+    width: 500px;
+    height: 400px;
+    margin: 0px auto 0px 20%;
+    display: inline-block;
+    font-family: Adam_CG;
+    font-size:40px;
+    font-weight: bold;
+    color: #545454;
+    text-align: center;
+}
+
+.company_name {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    perspective: 1000px;
+    box-sizing: border-box;
+    border: var(--details-box-tile-border);
+}
+
+@keyframes rotation_name{
+    0% {transform: rotateX(0);}
+    20% {transform: rotateX(0);}
+    25% {transform: var(--company-name-transform);}
+    70% {transform: var(--company-name-transform);}
+    75% {transform: rotateX(0);}
+    100% {transform: rotateX(0);}
+}
+
+@keyframes rotation_address{
+    0% {transform: rotateX(0);}
+    20% {transform: rotateX(0);}
+    25% {transform: var(--company-address-transform);}
+    70% {transform: var(--company-address-transform);}
+    75% {transform: rotateX(0);}
+    100% {transform: rotateX(0);}
+}
+
+@keyframes rotation_page_views{
+    0% {transform: rotateX(0);}
+    20% {transform: rotateX(0);}
+    25% {transform: var(--company-page-views-transform);}
+    70% {transform: var(--company-page-views-transform);}
+    75% {transform: rotateX(0);}
+    100% {transform: rotateX(0);}
+}
+
+.company_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;
+    transform-style: preserve-3d;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.company_name_inner{
+    animation-name: rotation_name;
+    animation-duration:10s;
+}
+
+.company_name:hover .company_name_inner{
+    animation:none;
+    transform: var(--company-name-transform);
+}
+
+.company_name_front, .company_name_back, .company_address_front, .company_address_back, .page_views_front, .page_views_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: grid;
+    align-items: center;
+    box-shadow: 9px 12px 18px 0px #2f2f2f;
+}
+
+.company_name_front {
+    background:var(--details-box-background);
+}
+
+.company_name_front img{
+    height: 48%;
+    width:auto;
+    margin: auto;
+}
+
+.company_name_back {
+    background: #E25D33;
+    color: #ffe4a6;
+    font-family: Nexa_Bold;
+    font-size: 95px;
+    transform: var(--company-name-transform);
+}
+
+.bottom_box {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.company_address {
+    vertical-align: middle;
+    align-items: center;
+    display: grid;
+    background-color: transparent;
+    perspective: 1000px;
+    box-sizing: border-box;
+    border: var(--details-box-tile-border);
+}
+
+.company_address:hover .company_address_inner {
+    animation:none;
+    transform: var(--company-address-transform);
+}
+
+.company_address_inner{
+    animation-name: rotation_address;
+    animation-duration:11s;
+}
+
+.company_address_front{
+    background:var(--details-box-background);
+}
+
+.company_address_back{
+    color: #634e47;
+    background: #2ecc71;
+    font-family: Another_Flight;
+    font-size: 30px;
+    transform: var(--company-address-transform);
+    text-align: left;
+}
+
+.company_address_back div{
+}
+
+.company_address_back p {
+    margin: 13px;
+}
+
+.page_views {
+    background-color: transparent;
+    perspective: 1000px;
+    box-sizing: border-box;
+    border: var(--details-box-tile-border);
+}
+
+.page_views:hover .page_views_inner {
+    animation:none;
+    transform: var(--company-page-views-transform);
+}
+
+.page_views_inner{
+    animation-name: rotation_page_views;
+    animation-duration:7s;
+}
+
+.page_views_front{
+    background:var(--details-box-background);
+}
+
+.page_views_back{
+    background: #353535;
+    color: #FFC107;
+    font-family: Carre;
+    font-size: 50px;
+    transform: var(--company-page-views-transform);
+}
+
+.active_users{width: 200px;height: 400px;text-align: center;font-family: 'Ubuntu', sans-serif;background: #f5f4eb;color: #353535;border-radius: 10px;box-shadow: 5px 10px 18px #211b1b;float: right;}
+
+.active_users table{
+    width: 100%;
+}
+
+.active_users th{
+    height: 30px;
+    color: #4CAF50;
+    background: #353535;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.active_users td{
+
+}

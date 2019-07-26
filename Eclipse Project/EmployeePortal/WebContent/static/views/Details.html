@@ -1,0 +1,52 @@
+<div class="Details-View">
+    <div class="nav_region">
+        <div class="Details-Box">
+            <div class="company_name">
+                <div class="company_inner company_name_inner">
+                    <div class="company_name_front">
+                        <img ng-src="static/images/logo/{{dtctrl.company.logo}}" alt="Logo">
+                    </div>
+                    <div class="company_name_back">
+                        <span ng-bind="dtctrl.company.name"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_box company_address">
+                <div class="company_inner company_address_inner">
+                    <div class="company_address_front">Address
+                </div>
+                    <div class="company_address_back">
+                        <div>
+                            <span ng-repeat="line in dtctrl.company.address">
+                                <p>
+                                    <span ng-bind="line"></span>
+                                </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_box page_views">
+                <div class="company_inner page_views_inner">
+                    <div class="page_views_front">Views
+                </div>
+                    <div class="page_views_back">
+                        <span ng-bind="dtctrl.company.pageViews"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="active_users">
+            <table>
+                <tr>
+                    <th>ACTIVE USERS</th>
+                </tr>
+                <tr ng-repeat="user in dtctrl.company.activeUsers">
+                    <td>
+                        <span ng-bind="user"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
