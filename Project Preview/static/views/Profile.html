@@ -1,0 +1,16 @@
+<div class="Profile-Container">
+    <div class="Profile-View">
+        <img alt="Profile Picture" ng-src="/static/images/dp/{{prctrl.user.image}}">
+        <div class="details">
+            <span ng-bind="prctrl.user.name" class="details_name"></span>
+            <br>
+            <img src="/static/images/briefcase.png">
+            <span ng-bind="prctrl.user.job" class="details_job"></span>
+            <br>
+            <img src="/static/images/office.png">
+            <a href="#/CompanyDetails" class="details_company">
+                <span ng-bind="prctrl.user.companyName"></span>
+            </a>
+        </div>
+    </div>
+</div>

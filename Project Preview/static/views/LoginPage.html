@@ -1,0 +1,18 @@
+<div class="Login-View">
+    <div class="Login-Box">
+        <h2>EMPLOYEE PORTAL</h2>
+        <div class="LoginBox">
+            <div class="user_info">
+            Username: ed.chase<br>Password: ed123
+            </div>
+            <div class="Error-Message-Container">
+                <div ng-show="lgctrl.error" class="Error-Message">{{lgctrl.error}}</div>
+            </div>
+            <form ng-submit="lgctrl.login()">
+                <input type="text" ng-model="lgctrl.user.username" placeholder="Username" pattern="[A-Za-z0-9_.]*" title="A-Z a-z 0-9 . _" required class="Login-Box-Field Login-Box-Input Login-Box-Text">
+                <input type="password" ng-model="lgctrl.user.password" placeholder="Password" required class="Login-Box-Field Login-Box-Input Login-Box-Password">
+                <input class="Login-Box-Field Login-Box-Button" type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</div>
