@@ -8,7 +8,7 @@ Technologies used: MySQL, MySQL Workbench 8.0, Java(JDK 1.8 and JRE 1.8), Eclips
 2. Create a user with the following credentials with full privileges to schema "employee_portal"
     - **Username**: user.employee
     - **Password**: Employee@123
-3. Either import the Eclipse Project in "Eclipse Project/EmployeePortal" or copy the WAR File to webapps folder of Apache Tomcat
+3. Either import the Eclipse Project in "Eclipse Project/EmployeePortal" and run it on Tomcat Server or copy the WAR File to webapps folder of Apache Tomcat and start the Tomcat server.
 4. The project must be run on **localhost:8080**
 5. Once the project is running, open the login page at "http://localhost:8080/EmployeePortal"
 6. You can login using the following credentials
