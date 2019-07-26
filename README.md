@@ -15,4 +15,12 @@ Technologies used: MySQL, MySQL Workbench 8.0, Java(JDK 1.8 and JRE 1.8), Eclips
     - **Username**: fred.costner
     - **Password**: fred123
 
+## Instructions to run project preview
+I've included a preview of the project in the directory "Project Preview". Run an HTTP Server in that directory for the preview. Python can be used to run an HTTP Server by the following code in command-line:
+```
+project_preview_directory> python -m http.server 5000
+```
+This starts an HTTP Server at **localhost:5000**, where you can view the project preview.
+
+
 I've included the screenshots of the project in "Screenshots" folder
